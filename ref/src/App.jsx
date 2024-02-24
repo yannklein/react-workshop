@@ -1341,16 +1341,16 @@ function App() {
       setCafes(CAFES.filter(cafe => cafe.title.toLowerCase().includes(keyword.toLowerCase())));
     }
   }
-  
+
   return (
     <div className='vh-100 vw-100'>
       <Navbar />
       <div className="d-flex">
         <div className="row w-100">
-          <div className="col-12 col-sm-4 col-xl-2">
+          <div className="col-12 col-sm-4 col-xl-3">
             <Sidebar filterCafe={filterCafe} />
           </div>
-          <div className="col-12 col-sm-8 col-xl-10">
+          <div className="col-12 col-sm-8 col-xl-9">
             <CafeList cafes={cafes}/>
           </div>
         </div>
