@@ -63,7 +63,7 @@ Add the code of this link on the right side.
 
 
 
-## How was this boilerplate was created
+## How was this boilerplate created?
 
 The boilerplate has been create with [Vite](https://vitejs.dev/) a lightning fast Frontend framework builder.
 
