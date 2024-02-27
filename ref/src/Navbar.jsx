@@ -1,7 +1,7 @@
 import React from 'react';
 import Searchbar from './Searchbar';
 
-function Navbar({filterCafe}) {
+function Navbar({setKeyword}) {
   return (
     <div className="d-flex justify-content-between align-items-center w-100 p-3 bg-success-subtle">
       <div className="d-flex align-items-center">
@@ -9,7 +9,7 @@ function Navbar({filterCafe}) {
         <h2>Matcha and keyboard</h2>
       </div>
       <div className="d-flex align-items-center gap-5">
-        <Searchbar filterCafe={filterCafe} />
+        <Searchbar setKeyword={setKeyword} />
         <div className="dropdown">
           <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i className="fa-solid fa-bars"></i>

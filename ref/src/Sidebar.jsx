@@ -1,11 +1,29 @@
 import React from 'react';
 
-function Sidebar() {
+function Sidebar({setCafes}) {
+  function addPosts(form) {
+    const url = "https://gist.githubusercontent.com/yannklein/5d8f9acb1c22549a4ede848712ed651a/raw/365578847e4dbee0c1d094bb44146bd5446eae97/cafe.json"
+    fetch(url, {
+      method: "POST",
+      headers: {"Content-type": "application/json"},
+      body: JSON.stringify(new FormData(form))
+    })
+      .then(response => response.json())
+      .then((data) => {
+        setCafes(data)
+      })
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    addPosts(event.currentTarget)
+  }
+
   return (
     <div style={{backgroundColor: "#E2EAED"}} className=" d-flex flex-column justify-content-between vh-100 sticky-top">
       <div className="p-4 mx-2">
         <h3 className="mt-4 mb-3" >Share your work spot</h3>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="cafe-name" className="form-label">What's its name?</label>
             <input placeholder="FabCafe Shibuya" type="text" className="form-control" id="cafe-name" aria-describedby="emailHelp" />

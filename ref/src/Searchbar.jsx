@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Searchbar({filterCafe}) {
+function Searchbar({setKeyword}) {
 
   function handleChange(event) {
-    filterCafe(event.currentTarget.value)
+    setKeyword(event.currentTarget.value)
   }
   return (
     <div className="input-group">
