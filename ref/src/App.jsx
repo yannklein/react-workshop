@@ -969,36 +969,6 @@ function App() {
     "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Blue Bottle Coffee - Ikebukuro Cafe 2-chōme-23-7 Minamiikebukuro, Toshima City, 171-0022Tokyo&query_place_id=ChIJ47thCASNGGAR0vVidyBFPdg"
     },
     {
-    "picture": "https://laptopfriendly.cohttps://maps.googleapis.com/maps/api/place/js/PhotoService.GetPhoto?1sAUjq9jkZNpFEqDj47vPTIInvLxkhVwXQlgxLYFpYRlpDhKS8g9uew9x1H4wMvPj4mRVS8VQoepmKIWvF2LAu3sQFabHOIBsth6fpBbNJNgVnqQ-bgi7ZecPRNNuVhkk5lwDrHA0F-Lr7Fn-41AHKsQSMptyDs_tMfTNFFdBoWcOfoMMnyiiw&3u3726&5m1&2e1&callback=none&key=AIzaSyClkNcJhGCTJQ6UeXAAapwOErK1Ny54kys&token=82713",
-    "title": "HONAN CAFE",
-    "informations": {
-    "Mon": [
-    "11:00 – 18:00"
-    ],
-    "Tue": [
-    "11:00 – 18:00"
-    ],
-    "Wed": [
-    "11:00 – 18:00"
-    ],
-    "Thu": [
-    "Closed"
-    ],
-    "Fri": [
-    "11:00 – 18:00"
-    ],
-    "Sat": [
-    "11:00 – 18:00"
-    ],
-    "Sun": [
-    "11:00 – 18:00"
-    ]
-    },
-    "address": "2-chōme-21-22 Hōnan, Suginami City, 168-0062, Tokyo",
-    "criterion": [],
-    "gmaps_url": "https://www.google.com/maps/search/?api=1&query=Honan Cafe 2-chōme-21-22 Hōnan, Suginami City, 168-0062Tokyo&query_place_id=ChIJ6foogPvyGGARFQ-7Sdt7m0w"
-    },
-    {
     "picture": "https://laptopfriendly.co/images/places/tokyo/nacafe/nacafe%20other%20nacafe-other%20.jpg",
     "title": "新豊洲カフェ NACAFE",
     "informations": {
@@ -1344,7 +1314,7 @@ function App() {
 
   return (
     <div className='vh-100 vw-100'>
-      <Navbar />
+      <Navbar filterCafe={filterCafe} />
       <div className="d-flex">
         <div className="row w-100">
           <div className="col-12 col-sm-4 col-xl-3">
