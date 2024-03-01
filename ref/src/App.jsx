@@ -1,8 +1,8 @@
 import './App.css';
 import React from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
-import CafeList from './CafeList';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar/Sidebar';
+import CafeList from './components/CafeList/CafeList';
 
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
   const [keyword, setKeyword] = React.useState("");
 
   React.useEffect(() => {
-    const url = "https://gist.githubusercontent.com/yannklein/5d8f9acb1c22549a4ede848712ed651a/raw/a66a32fa5a6e2faf5b861f4ee340d3c68ba27ad3/cafe.json"
-    const params = (keyword !== "") ? `&keyword=${keyword}` : ""
+    const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"
+    const params = (keyword !== "") ? `&title=${keyword}` : ""
     fetch(url + params)
       .then(response => response.json())
       .then((data) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Cafe from './Cafe';
+import Cafe from '../Cafe/Cafe';
 import "./CafeList.css"
 
 function CafeList({cafes}) {

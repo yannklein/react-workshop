@@ -1,10 +1,9 @@
 import React from 'react';
-import CriteriaInput from './CriteriaInput';
 import "./Sidebar.css";
 
 function Sidebar({setCafes}) {
   function addPosts(form) {
-    const url = "https://gist.githubusercontent.com/yannklein/5d8f9acb1c22549a4ede848712ed651a/raw/89f7fa69ea50a55e38bfc91ccc3ba5b71450e5a6/cafe.json"
+    const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"
     fetch(url, {
       method: "POST",
       headers: {"Content-type": "application/json"},
@@ -21,7 +20,7 @@ function Sidebar({setCafes}) {
     addPosts(event.currentTarget)
   }
 
-  const criterion = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"]
+  const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"]
 
   return (
     <div className="sidebar">
@@ -37,7 +36,14 @@ function Sidebar({setCafes}) {
             <input placeholder="1-chome-11-1 Shibuya, Shibuya City, 150-0002, Tokyo, 150-0002, Tokyo" type="address" className="form-control" id="cafe-address" />
           </div>
           <div className="mb-3"> 
-            { criterion.map((criteria) => <CriteriaInput criteria={criteria} key={criteria}/>) }
+            { criteria.map((criterion) => {
+              return ( 
+                <>
+                  <input type="checkbox" className="btn-check" id={criterion} autoComplete="off" />
+                  <label className="btn btn-outline-success btn-sm mx-1 mb-1" htmlFor="feature-wifi">{criterion}</label>
+                </>
+              )
+            }) }
           </div>
           <div className="input-group my-3">
             <input type="file" className="form-control" id="cafe-picture" />
