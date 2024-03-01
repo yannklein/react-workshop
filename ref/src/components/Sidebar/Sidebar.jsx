@@ -38,10 +38,10 @@ function Sidebar({setCafes}) {
           <div className="mb-3"> 
             { criteria.map((criterion) => {
               return ( 
-                <>
+                <React.Fragment key={criterion}>
                   <input type="checkbox" className="btn-check" id={criterion} autoComplete="off" />
                   <label className="btn btn-outline-success btn-sm mx-1 mb-1" htmlFor="feature-wifi">{criterion}</label>
-                </>
+                </React.Fragment>
               )
             }) }
           </div>
