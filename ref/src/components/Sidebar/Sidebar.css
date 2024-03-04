@@ -12,3 +12,13 @@
   padding: 0 24px;
   padding-top: 24px;
 }
+
+.sidebar .form-icons {
+  min-width: 20px;
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    display: none;
+  }
+}

@@ -11,7 +11,7 @@ function App() {
 
   React.useEffect(() => {
     const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"
-    const params = (keyword !== "") ? `&title=${keyword}` : ""
+    const params = (keyword !== "") ? `?title=${keyword}` : ""
     fetch(url + params)
       .then(response => response.json())
       .then((data) => {

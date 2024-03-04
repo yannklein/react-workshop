@@ -32,6 +32,7 @@ Follow these steps:
 ```bash
 gh repo clone yannklein/react-workshop-feb2024
 code .
+rm -rf .git
 cd workshop
 npm install
 npm run dev

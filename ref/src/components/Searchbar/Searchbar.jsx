@@ -1,4 +1,5 @@
 import React from 'react';
+import './Searchbar.css';
 
 function Searchbar({setKeyword}) {
 
@@ -6,8 +7,8 @@ function Searchbar({setKeyword}) {
     setKeyword(event.currentTarget.value)
   }
   return (
-    <div className="input-group">
-      <span className="input-group-text" id="basic-addon1"><i className="fa-solid fa-magnifying-glass"></i></span>
+    <div className="searchbar input-group">
+      <span className="input-group-text"><i className="fa-solid fa-magnifying-glass"></i></span>
       <input placeholder="Starbucks" type="text" className="form-control" onChange={handleChange} />
     </div>
   );
