@@ -1,11 +1,14 @@
 # React workshop
+Let's build an app listing dev-friendly cafes in Tokyo ☕️
+
+<img src=image-2.png width='640' style='border-radius: 5px;'>
 
 ## Get started
 
 ### 1. Setup the project
 
 <details>
-<summary>I am not a Le Wagon student</summary>
+<summary>Open if you're not a Le Wagon student</summary>
 You will need to install the softwares below if not done yet:
 
 - Install NodeJS (https://nodejs.org/en/) version 16 or over
@@ -13,7 +16,7 @@ You will need to install the softwares below if not done yet:
 </details>
 
 <details>
-<summary>I graduated more than 6 months ago</summary>
+<summary>Open if you graduated more than 6 months ago</summary>
 You need node v16 or over. Run the following in your terminal:
 
 ```bash
@@ -31,8 +34,8 @@ Follow these steps:
 
 ```bash
 gh repo clone yannklein/react-workshop-feb2024
-code .
 rm -rf .git
+code .
 cd workshop
 npm install
 npm run dev
@@ -40,23 +43,23 @@ npm run dev
 
 You should see this on your terminal:
 
-![alt text](image.png)
+<img src=image.png width='460' style='border-radius: 5px; margin: 16px 0;'>
 
 - Open `http://localhost:5173/` in your browser, you should see this:
 
-![alt text](image-1.png)
+<img src=image-1.png width='200' style='border-radius: 5px; margin: 16px 0;'>
 
 ### 2. Setup the your code editor
 
 #### Setup for VS code
 
-Go to `Code > Preferences > Extensions`, search and install "Reactjs code snippets" (some doc here)
+Go to `Code > Preferences > Extensions`, search and install "Reactjs code snippets" (some [doc here](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets))
 
 #### Setup for Sublime Text
 
 1. Go to `SublimeText > Preferences > Package Control`, search for "Package Control: Install Package" and press Enter. In the appearing list, search for "Babel" and press Enter.
 
-2. Same operations for "Babel Snippets" (some doc here)
+2. Same operations for "Babel Snippets" (some [doc here](https://packagecontrol.io/packages/Babel%20Snippets))
 
 3. Got to SublimeText > Preferences > Key Bindings
 
