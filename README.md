@@ -65,7 +65,36 @@ Go to `Code > Preferences > Extensions`, search and install "Reactjs code snippe
 
 Add the code of this link on the right side.
 
+## Push your project to production with Github Pages
 
+1. First decide of a Github repo name. Go to the `workshop/vite.config.js` file and replace the base folder with your repo name:
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: "/your-repo-name-here/"
+})
+
+```
+
+2. In the terminal, commit your work, create your gh repository and push your code:
+
+Make sure you replace `your-repo-name-here` in the below command ⚠️
+
+```bash
+git add .
+git commit -m "finish the workshop base app"
+gh repo create
+gh repo create your-repo-name-here --public --source=.
+gh browse
+```
+
+3. The github repo will open, your project should be building in the Action tab. Wait for a short while to see the URL appearing:
+
+[See how to access the URL here](gh-actions.mov)
 
 ## How was this boilerplate created?
 
