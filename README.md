@@ -35,8 +35,11 @@ Follow these steps:
 ```bash
 gh repo clone yannklein/react-workshop-feb2024
 rm -rf .git
+cd ref
 code .
 cd workshop
+git init
+code .
 npm install
 npm run dev
 ```
@@ -87,8 +90,8 @@ Make sure you replace `your-repo-name-here` in the below command ⚠️
 ```bash
 git add .
 git commit -m "finish the workshop base app"
-gh repo create
 gh repo create your-repo-name-here --public --source=.
+git push origin master
 gh browse
 ```
 
