@@ -96,8 +96,11 @@ gh browse
 ```
 
 3. The github repo will open, your project should be building in the Action tab. Wait for a short while to see the URL appearing:
+4. 
+https://github.com/yannklein/react-workshop-feb2024/assets/26819547/cde3c3f3-6221-424d-8aa1-05b09ce9f458
 
-[See how to access the URL here](gh-actions.mov)
+
+
 
 ## How was this boilerplate created?
 
