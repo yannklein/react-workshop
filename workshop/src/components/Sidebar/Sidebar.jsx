@@ -2,24 +2,8 @@ import React from 'react';
 import "./Sidebar.css";
 import logo from '../../assets/logo_w_context2.png'
 
-function Sidebar({setCafes}) {
-  function addCafe(form) {
-    const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"
-    fetch(url, {
-      method: "POST",
-      body: new FormData(form)
-    })
-      .then(response => response.json())
-      .then((newCafe) => {
-        setCafes((cafeList) => [...cafeList, newCafe]);
-        form.reset();
-      })
-  }
-
-  function handleSubmit(event) {
-    event.preventDefault()
-    addCafe(event.currentTarget)
-  }
+function Sidebar() {
+  // TODO: build the addCafe feature
 
   const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"]
 
@@ -27,7 +11,7 @@ function Sidebar({setCafes}) {
     <div className="sidebar">
       <div>
         <h3>Share your work spot</h3>
-        <form onSubmit={handleSubmit}>
+        <form>
           <div className="input-group mb-3">
             <span className="input-group-text" id="cafe-title"><i className="fa-solid fa-mug-saucer form-icons"></i></span>
             <input name="cafe[title]" placeholder="FabCafe Shibuya" type="text" className="form-control" aria-describedby="cafe-title" />
