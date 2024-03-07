@@ -25,7 +25,7 @@ function Slides({ slidesDisplayed, setSlidesDisplayed }) {
       <div className="reveal">
         <div className="slides">
           <section
-            data-background-color="aquamarine"
+            data-background-color="#202329"
             data-background-opacity="1"
             data-markdown="README.md"
             data-separator="^\n\n\n"
