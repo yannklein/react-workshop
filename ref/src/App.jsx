@@ -9,7 +9,7 @@ import Slides from './components/Slides/Slides';
 function App() {
   const [cafes, setCafes] = React.useState([]);
   const [keyword, setKeyword] = React.useState("");
-  const [slidesDisplayed, setSlidesDisplayed] = React.useState(true);
+  const [slidesDisplayed, setSlidesDisplayed] = React.useState(false);
 
   React.useEffect(() => {
     const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"

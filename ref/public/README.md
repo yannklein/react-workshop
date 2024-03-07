@@ -28,9 +28,7 @@ Let's build an app listing dev-friendly cafes in Tokyo ☕️
 It looks like a function! But it's rendered as a HTML.
 
 ```jsx
-  // [...]
-
-  function Hello() {
+function Hello() {
     return "Hello";
   }
   root.render(<Hello />)
@@ -41,9 +39,7 @@ And it can return HTML in JS!!
 The magic of [JSX](https://babeljs.io/repl#) ✨
 
 ```jsx
-  // [...]
-
-  function Hello() {
+function Hello() {
     return <h1>Hello there!</h1>;
   }
   root.render(<Hello />)
@@ -183,6 +179,7 @@ function Searchbar({setKeyword}) {
   );
 }
 ```
+
 
 
 # Good luck with React! ⚛

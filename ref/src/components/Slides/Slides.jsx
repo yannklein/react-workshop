@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import Reveal from 'reveal.js';
 import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';
 import Highlight from 'reveal.js/plugin/highlight/highlight.js';
@@ -12,8 +12,11 @@ function Slides({ slidesDisplayed, setSlidesDisplayed }) {
     const deck = new Reveal({
       plugins: [Markdown, Highlight],
     });
-    deck.initialize({ embedded: true });
-  }, [slidesDisplayed]);
+    deck.initialize({ 
+      embedded: true,
+      minScale: 1,
+    });
+  }, []);
 
   const slideClass = `slide-frame ${slidesDisplayed ? '' : 'd-none'}`;
 
@@ -38,7 +41,7 @@ function Slides({ slidesDisplayed, setSlidesDisplayed }) {
         <button
           onClick={handleClick}
           type="button"
-          className="btn-close position-absolute top-0 end-0 z-3"
+          className="m-3 btn-close-white btn-close position-absolute top-0 end-0 z-3"
           aria-label="Close"
         ></button>
       </div>
