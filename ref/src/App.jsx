@@ -3,11 +3,13 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
 import CafeList from './components/CafeList/CafeList';
+import Slides from './components/Slides/Slides';
 
 
 function App() {
   const [cafes, setCafes] = React.useState([]);
   const [keyword, setKeyword] = React.useState("");
+  const [slidesDisplayed, setSlidesDisplayed] = React.useState(true);
 
   React.useEffect(() => {
     const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"
@@ -21,7 +23,8 @@ function App() {
 
   return (
     <div className='app-frame'>
-      <Navbar setKeyword={setKeyword} />
+      <Slides slidesDisplayed={slidesDisplayed} setSlidesDisplayed={setSlidesDisplayed} />
+      <Navbar setKeyword={setKeyword} setSlidesDisplayed={setSlidesDisplayed}/>
       <div className="app-body">
         <Sidebar setCafes={setCafes} />
         <CafeList cafes={cafes}/>
