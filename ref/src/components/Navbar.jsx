@@ -2,10 +2,7 @@ import React from 'react';
 import Searchbar from './Searchbar/Searchbar';
 import logo from '../assets/logo.png'
 
-function Navbar({setKeyword, setSlidesDisplayed}) {
-  function handleClick() {
-    setSlidesDisplayed(true)
-  }
+function Navbar({setKeyword}) {
   return (
     <div className="d-flex justify-content-between align-items-center w-100 py-2 px-4 bg-success-subtle">
       <div className="d-flex align-items-center">
@@ -19,7 +16,7 @@ function Navbar({setKeyword, setSlidesDisplayed}) {
             <i className="fa-solid fa-bars"></i>
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="#" onClick={handleClick}>Show slides</a></li>
+            <li><a className="dropdown-item" href="slides.html" >Show slides</a></li>
             <li><a className="dropdown-item" href="#">Log out</a></li>
           </ul>
         </div>
