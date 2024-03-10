@@ -1,11 +1,11 @@
 import React from 'react';
 import "./Sidebar.css";
-import logo from '../../assets/logo_w_context2.png'
+import logo from '../../assets/logo_w_context2.png';
 
 function Sidebar() {
   // TODO: build the addCafe feature
 
-  const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"]
+  const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"];
 
   return (
     <div className="sidebar">
@@ -27,7 +27,7 @@ function Sidebar() {
                   <input name="cafe[criteria][]" type="checkbox" className="btn-check" id={criterion} autoComplete="off" value={criterion}/>
                   <label className="btn btn-outline-success btn-sm mx-1 mb-1" htmlFor={criterion}>{criterion}</label>
                 </React.Fragment>
-              )
+              );
             }) }
           </div>
           <div className="input-group mb-3">

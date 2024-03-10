@@ -1,7 +1,3 @@
-.searchbar {
-  
-}
-
 @media (max-width: 500px) {
   .searchbar {
     display: none;
