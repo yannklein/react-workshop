@@ -15,7 +15,7 @@ function App() {
       .then(response => response.json())
       .then((data) => {
         setCafes(data);
-      })
+      });
   }, [keyword]);
 
   return (

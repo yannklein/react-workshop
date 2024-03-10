@@ -1,10 +1,10 @@
 import React from 'react';
 import "./Sidebar.css";
-import logo from '../../assets/logo_w_context2.png'
+import logo from '../../assets/logo_w_context2.png';
 
 function Sidebar({setCafes}) {
   function addCafe(form) {
-    const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes"
+    const url = "https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes";
     fetch(url, {
       method: "POST",
       body: new FormData(form)
@@ -13,15 +13,15 @@ function Sidebar({setCafes}) {
       .then((newCafe) => {
         setCafes((cafeList) => [...cafeList, newCafe]);
         form.reset();
-      })
+      });
   }
 
   function handleSubmit(event) {
-    event.preventDefault()
-    addCafe(event.currentTarget)
+    event.preventDefault();
+    addCafe(event.currentTarget);
   }
 
-  const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"]
+  const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"];
 
   return (
     <div className="sidebar">
@@ -43,7 +43,7 @@ function Sidebar({setCafes}) {
                   <input name="cafe[criteria][]" type="checkbox" className="btn-check" id={criterion} autoComplete="off" value={criterion}/>
                   <label className="btn btn-outline-success btn-sm mx-1 mb-1" htmlFor={criterion}>{criterion}</label>
                 </React.Fragment>
-              )
+              );
             }) }
           </div>
           <div className="input-group mb-3">

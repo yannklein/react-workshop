@@ -4,7 +4,7 @@ import './Searchbar.css';
 function Searchbar({setKeyword}) {
 
   function handleChange(event) {
-    setKeyword(event.currentTarget.value)
+    setKeyword(event.currentTarget.value);
   }
   return (
     <div className="searchbar input-group">

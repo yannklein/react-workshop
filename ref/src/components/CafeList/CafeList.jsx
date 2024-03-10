@@ -1,6 +1,6 @@
 import React from 'react';
 import Cafe from '../Cafe/Cafe';
-import "./CafeList.css"
+import "./CafeList.css";
 
 function CafeList({cafes}) {
   return (

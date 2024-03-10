@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Cafe.css"
+import "./Cafe.css";
 
 function Cafe({cafe}) {
   const gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${cafe.title} ${cafe.address}`;

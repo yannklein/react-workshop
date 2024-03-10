@@ -1,6 +1,6 @@
 import React from 'react';
 import Searchbar from './Searchbar/Searchbar';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 function Navbar({setKeyword}) {
   return (
