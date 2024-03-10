@@ -16,7 +16,7 @@ function Navbar({setKeyword}) {
             <i className="fa-solid fa-bars"></i>
           </button>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="slides.html" >Show slides</a></li>
+            <li><a className="dropdown-item" href="slides" >Show slides</a></li>
             <li><a className="dropdown-item" href="#">Log out</a></li>
           </ul>
         </div>
