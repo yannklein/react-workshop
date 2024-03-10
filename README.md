@@ -3,7 +3,30 @@ Let's build an app listing dev-friendly cafes in Tokyo ☕️
 
 <img src=image-2.png width='640' style='border-radius: 5px;'>
 
-## Get started
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#workshop-links">Workshop links</a></li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#setup-the-project">Setup the project</a></li>
+        <li><a href="#setup-the-your-code-editor">Setup the your code editor</a></li>
+        <li><a href="#push-your-project-to-production-with-github-pages">ush your project to production with Github Pages</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-was-this-boilerplate-created">How was this boilerplate created?</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
+## Workshop links:
+
+- [Slides](https://yannklein.github.io/react-workshop-ref/slides)
+- [Final app example](https://yannklein.github.io/react-workshop-ref)
+
+## Getting started
 
 ### 1. Setup the project
 
@@ -120,3 +143,14 @@ For this workshop, I used the following options:
 - Select a variant: `Javascript`
 
 Then, run the sugggested 3 commands to start up the project.
+
+
+## Acknowledgments
+
+Thanks to the teams of:
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Le Wagon Tokyo](https://lewagon.com/tokyo)
+
+And special thank to my backend teammate for this project, [Doug Berkley](https://www.douglasberkley.com/). ([@dmbf29](https://github.com/dmbf29))
+Check out his [Rails backend API workshop repo](https://github.com/dmbf29/rails-api-tutorial) to learn to build a backend to your React application.
