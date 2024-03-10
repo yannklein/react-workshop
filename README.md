@@ -1,5 +1,8 @@
 # React workshop
+
 Let's build an app listing dev-friendly cafes in Tokyo ☕️
+
+This tutorial covers the **React frontend** of the app. To learn how to build its **Rails backend**, jump on Doug Berkley's [Rails API tutorial](https://github.com/dmbf29/rails-api-tutorial) 💎. 
 
 <img src=image-2.png width='640' style='border-radius: 5px;'>
 
