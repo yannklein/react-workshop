@@ -73,6 +73,11 @@ npm install
 npm run dev
 ```
 
+It will open **2 VS codes!**:
+
+- The `ref` one is the final code of this workshop (with the app built already) for your reference.
+- The `workshop` one is the code base you will use to build your app during this workshop.
+
 You should see this on your terminal:
 
 <img src=image.png width='460' style='border-radius: 5px; margin: 16px 0;'>
@@ -125,7 +130,7 @@ gh browse
 ```
 
 3. The github repo will open, your project should be building in the Action tab. Wait for a short while to see the URL appearing:
-4. 
+   
 https://github.com/yannklein/react-workshop-feb2024/assets/26819547/cde3c3f3-6221-424d-8aa1-05b09ce9f458
 
 
