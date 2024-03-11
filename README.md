@@ -59,7 +59,8 @@ Follow these steps:
 - Then, run the below code:
 
 ```bash
-gh repo clone yannklein/react-workshop-feb2024
+gh repo clone yannklein/react-workshop
+cd react-workshop
 rm -rf .git
 cd ref
 code .
