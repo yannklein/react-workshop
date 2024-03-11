@@ -54,7 +54,7 @@ nvm use 16.15.1
 <br>
 Follow these steps:
 
-- In your terminal, go to the folder in which you would like to build your react app.
+- In your terminal, **go to the folder in which you would like to build your react app**.
 
 - Then, run the below code:
 
