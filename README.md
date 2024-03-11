@@ -67,6 +67,8 @@ code .
 cd ../workshop
 git init
 code .
+rm -rf package-lock.json
+rm -rf ./node_modules
 npm install
 npm run dev
 ```
