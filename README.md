@@ -64,7 +64,7 @@ cd react-workshop
 rm -rf .git
 cd ref
 code .
-cd workshop
+cd ../workshop
 git init
 code .
 npm install
