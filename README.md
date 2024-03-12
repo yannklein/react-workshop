@@ -125,6 +125,16 @@ Make sure you replace `your-repo-name-here` in the below command ⚠️
 git add .
 git commit -m "finish the workshop base app"
 gh repo create your-repo-name-here --public --source=.
+gh browse
+```
+
+The Github repo webpage will open. Go to Settings > Pages and change `source` into 'Github Action'. The below shows were to click:
+
+https://github.com/yannklein/react-workshop/assets/26819547/6ec8fbb9-4612-470f-801c-d4355be7ab38
+
+Finally, run this command in your terminal:
+
+```
 git push origin master
 gh browse
 ```
