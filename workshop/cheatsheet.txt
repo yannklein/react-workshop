@@ -1,0 +1,93 @@
+[
+    {
+        "picture": "https://laptopfriendly.co/images/places/tokyo/ddsk-saigon-kitchen/ddsk-saigon-kitchen--tokyo.jpg",
+        "title": "DDSK SAIGON KITCHEN",
+        "hours": {
+            "Mon": [
+                "11:00 \u2013 15:00",
+                "17:00 \u2013 22:00"
+            ],
+            "Tue": [
+                "11:00 \u2013 15:00",
+                "17:00 \u2013 22:00"
+            ],
+            "Wed": [
+                "11:00 \u2013 15:00",
+                "17:00 \u2013 22:00"
+            ],
+            "Thu": [
+                "11:00 \u2013 15:00",
+                "17:00 \u2013 22:00"
+            ],
+            "Fri": [
+                "11:00 \u2013 15:00",
+                "17:00 \u2013 22:00"
+            ],
+            "Sat": [
+                "11:00 \u2013 22:00",
+                ""
+            ],
+            "Sun": [
+                "11:00 \u2013 22:00",
+                ""
+            ]
+        },
+        "address": "ss, 135-0061, Tokyo",
+        "criteria": []
+    },
+    {
+        "picture": "https://laptopfriendly.co/images/places/tokyo/common/common--tokyo.jpg",
+        "title": "COMMON",
+        "hours": {
+            "Mon": [
+                "08:00 \u2013 23:00"
+            ],
+            "Tue": [
+                "08:00 \u2013 23:00"
+            ],
+            "Wed": [
+                "08:00 \u2013 23:00"
+            ],
+            "Thu": [
+                "08:00 \u2013 23:00"
+            ],
+            "Fri": [
+                "08:00 \u2013 23:00"
+            ],
+            "Sat": [
+                "08:00 \u2013 23:00"
+            ],
+            "Sun": [
+                "08:00 \u2013 23:00"
+            ]
+        },
+        "address": "106-0032, Tokyo",
+        "criteria": [
+            "Stable Wi-Fi",
+            "Power sockets",
+            "Quiet",
+            "Coffee",
+            "Food"
+        ]
+    }
+]
+
+
+<div className="searchbar input-group">
+    <span className="input-group-text"><i className="fa-solid fa-magnifying-glass"></i></span>
+    <input placeholder="Starbucks" type="text" className="form-control" onChange={handleChange} />
+</div>
+
+
+<div className="cafe-card">
+    <img src={cafe.picture} alt={cafe.title} />
+    <div>
+    <div>
+        <h5>{cafe.title}</h5>
+        <p>
+        { cafe.criteria .map( crit => <span key={crit}>{crit}</span>)}
+        </p>
+    </div>
+    <a target="_blank" href={gmapsUrl}>Show the map 📍</a>
+    </div>
+</div>
