@@ -3,7 +3,7 @@ import './Searchbar.css';
 
 // OPTIONAL: USE EFFECT VERSION
 // function Searchbar({setKeyword}) {
-function Searchbar({setCafe}) {
+function Searchbar({setCafes}) {
 
   function handleChange(event) {
     // OPTIONAL: USE EFFECT VERSION
