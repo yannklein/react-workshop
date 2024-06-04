@@ -1,10 +1,20 @@
 import React from 'react';
 import './Searchbar.css';
 
-function Searchbar({setKeyword}) {
+// OPTIONAL: USE EFFECT VERSION
+// function Searchbar({setKeyword}) {
+function Searchbar({setCafe}) {
 
   function handleChange(event) {
-    setKeyword(event.currentTarget.value);
+    // OPTIONAL: USE EFFECT VERSION
+    // setKeyword(event.currentTarget.value);
+
+    const url = `https://matcha-and-keyboard-f549965e60e7.herokuapp.com/api/v1/cafes?title=${event.currentTarget.value}`;
+    fetch(url)
+      .then(response => response.json())
+      .then((data) => {
+        setCafes(data);
+      });
   }
   return (
     <div className="searchbar input-group">
