@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import logo from '../../assets/logo_w_context2.png';
 
 function Sidebar() {
-  // TODO: build the addCafe feature
+  // OPTIONAL: build the addCafe feature
 
   const criteria = ["Stable Wi-Fi", "Power sockets", "Quiet", "Coffee", "Food"];
 
