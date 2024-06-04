@@ -5,3 +5,5 @@
 // title: "DDSK SAIGON KITCHEN",
 // address: "ss, 135-0061, Tokyo",
 // criteria: ["Power sockets", "Quiet"]
+
+import "./Cafe.css";
