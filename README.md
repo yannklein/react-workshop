@@ -175,3 +175,4 @@ Thanks to the teams of:
 
 And special thank to my backend teammate for this project, [Doug Berkley](https://www.douglasberkley.com/). ([@dmbf29](https://github.com/dmbf29))
 Check out his [Rails backend API workshop repo](https://github.com/dmbf29/rails-api-tutorial) to learn to build a backend to your React application.
+Find here [the video](https://www.youtube.com/watch?v=aRUn6X9XY7c) of the workshop.
