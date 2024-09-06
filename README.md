@@ -92,7 +92,7 @@ You should see this on your terminal:
 
 Go to `Code > Preferences > Extensions`, search and install "Reactjs code snippets" (some [doc here](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets))
 
-#### Setup for Sublime Text
+#### Setup for Sublime Text (don't do this if you are not using the Sublime Text code editor!)
 
 1. Go to `SublimeText > Preferences > Package Control`, search for "Package Control: Install Package" and press Enter. In the appearing list, search for "Babel" and press Enter.
 
