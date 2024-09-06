@@ -82,7 +82,7 @@ You should see this on your terminal:
 
 <img src=image.png width='460' style='border-radius: 5px; margin: 16px 0;'>
 
-- Open `http://localhost:5173/` in your browser, you should see this:
+- Open `http://localhost:5173/` in your browser (or `http://localhost:5173/react-workshop/` if not working), you should see this:
 
 <img src=image-1.png width='200' style='border-radius: 5px; margin: 16px 0;'>
 
