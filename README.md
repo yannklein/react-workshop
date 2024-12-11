@@ -29,7 +29,7 @@ This tutorial covers the **React frontend** of the app. To learn how to build it
 - [Slides](https://yannklein.github.io/react-workshop-ref/slides)
 - [Final app example](https://yannklein.github.io/react-workshop-ref)
 
-## Getting started
+## A. Getting started
 
 ### 1. Setup the project
 
@@ -88,11 +88,11 @@ You should see this on your terminal:
 
 ### 2. Setup the your code editor
 
-#### Setup for VS code
+#### Setup for VS code (for Le Wagon students)
 
 Go to `Code > Preferences > Extensions`, search and install "Reactjs code snippets" (some [doc here](https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets))
 
-#### Setup for Sublime Text (don't do this if you are not using the Sublime Text code editor!)
+#### Setup for Sublime Text (⚠️ don't do this if you are not using the Sublime Text code editor!)
 
 1. Go to `SublimeText > Preferences > Package Control`, search for "Package Control: Install Package" and press Enter. In the appearing list, search for "Babel" and press Enter.
 
@@ -102,7 +102,7 @@ Go to `Code > Preferences > Extensions`, search and install "Reactjs code snippe
 
 Add the code of this link on the right side.
 
-## Push your project to production with Github Pages
+## B. Push your project to production with Github Pages
 
 1. First decide of a Github repo name. Go to the `workshop/vite.config.js` file and replace the base folder with your repo name:
 ```javascript
@@ -146,7 +146,7 @@ https://github.com/yannklein/react-workshop-feb2024/assets/26819547/cde3c3f3-622
 
 
 
-## How was this boilerplate created?
+## C. How was this boilerplate created?
 
 The boilerplate has been create with [Vite](https://vitejs.dev/) a lightning fast Frontend framework builder.
 
@@ -166,7 +166,7 @@ For this workshop, I used the following options:
 Then, run the sugggested 3 commands to start up the project.
 
 
-## Acknowledgments
+## D. Acknowledgments
 
 Thanks to the teams of:
 - [React](https://react.dev/)
