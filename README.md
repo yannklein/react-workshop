@@ -128,7 +128,9 @@ gh repo create your-repo-name-here --public --source=.
 gh browse
 ```
 
-The Github repo webpage will open. Go to Settings > Pages and change `source` into 'Github Action'. The below shows were to click:
+The Github repo webpage will open. Do the two following settings:
+- Go to Settings > Actions > General and under `Workflow permissions` click on `Read and write permissions`.
+- Go to Settings > Pages and change `source` into 'Github Action'. The below shows were to click:
 
 https://github.com/yannklein/react-workshop/assets/26819547/6ec8fbb9-4612-470f-801c-d4355be7ab38
 
