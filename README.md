@@ -143,8 +143,14 @@ gh browse
 ```
 
 3. The github repo will open, your project should be building in the Action tab. Wait for a short while to see the URL appearing:
+Note: if the URL doesn't appear as shown in the video, click on "Deploy static content to Pages and then "Run workflow as shown below the video
    
 https://github.com/yannklein/react-workshop-feb2024/assets/26819547/cde3c3f3-6221-424d-8aa1-05b09ce9f458
+
+Note's images:
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/8080b9ed-ab6a-498e-89be-8192d3b04bb1" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/22278fbe-f861-404e-ab2f-428ff766e92d" />
 
 
 
