@@ -137,7 +137,8 @@ https://github.com/yannklein/react-workshop/assets/26819547/6ec8fbb9-4612-470f-8
 Finally, run this command in your terminal:
 
 ```
-git push origin master
+git push origin main
+# OR git push origin master depending on your repo!
 gh browse
 ```
 
